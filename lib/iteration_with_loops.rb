@@ -7,7 +7,7 @@ def join_nested_strings(src)
   while row< src.count do
     element=0 
     while element <src[row].count do
-      if src[row][element].is_a?(string)
+      if src[row][element].class == string
         sentence << src[row][element]
       end
     element+=1
